@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	log.Println("website-controller started.")
+	log.Println("test-website-controller started.")
 	for {
 		resp, err := http.Get("http://localhost:8001/apis/extensions.example.com/v1/websites?watch=true")
 		if err != nil {
