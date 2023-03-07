@@ -2,7 +2,7 @@ build:
 	CGO_ENABLED=0 GOOS=linux go build -o website-controller -a pkg/website-controller.go
 
 image: build
-	docker build -t luksa/website-controller .
+	docker build -t stanley2021/website-controller .
 
 push: image
-	docker push luksa/website-controller:latest
+	docker push stanley2021/website-controller:latest
